@@ -1,0 +1,140 @@
+html body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%
+    
+}
+.fundo{
+ width: 100%;
+ height: 659.2px;
+
+}
+.header a{
+    font-size: 1.5em ;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: orange;
+}
+.nav1 li{
+  float: left;
+ width: 180px;
+ height: 40px;
+ display: inline-block;
+ text-align: center;
+ border-left: 7px solid orange;
+
+}
+.nav1{
+    padding: 0;
+    position: absolute;
+    margin-left: 14%;
+   
+}
+.nav1 ul {
+    display: none;
+    margin-top: 13px;
+    padding: 0;
+    margin-left: -7.2px;
+  
+  
+}
+.nav1 ul li a{
+    color: #3b85d8;
+}
+.nav1 ul li{
+    border: none;
+    border-left: 7px solid #3b85d8;
+}
+.nav1 li:hover > ul{
+    display: block;
+}
+.nav2 li{
+    float: left;
+   width: 180px;
+   height: 40px;
+   display: inline-block;
+   text-align: center;
+   border-left: 7px solid orange;
+  
+  }
+  .nav2{
+      padding: 0;
+      position: absolute;
+      margin-left: 65%;
+     
+  }
+  .nav2 ul {
+      display: none;
+      margin-top: 13px;
+      padding: 0;
+      margin-left: -7.2px;
+    
+    
+  }
+  .nav2 ul li a{
+      color: orange;
+  }
+  .nav2 ul li{
+      color: orange;
+      border: none;
+      border-left: 7px solid orange;
+  }
+  .nav2 li:hover > ul{
+      display: block;
+  }
+  .caixa1{
+      width: 50%;
+      height: 300px;
+    
+      position: absolute;
+      margin-top: 350px;
+      margin-left: 2%;
+     
+  }
+  .caixa1 img{
+      width: 50%;
+    
+      border-radius: 14px;
+      border: 7px solid black;
+      float: left;
+      margin-top: 10px;
+  }
+.caixa1 img:hover{
+    transform: scale(1.1);
+}
+  .caixa1 h1{
+      margin: 0;
+      padding: 0;
+      width: 40%;
+      float: left;
+      color: white;
+      line-height: 70px;
+  }
+  .caixa2{
+    width: 50%;
+    height: 300px;
+ 
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 670px;
+}
+.caixa2 img{
+    width: 50%;
+    height: 86%;
+    border-radius: 14px;
+    border: 7px solid black;
+    float: left;
+    margin-top: 10px;
+}
+.caixa2 img:hover{
+    transform: scale(1.1);
+}
+.caixa2 h1{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    float: left;
+    color: white;
+    line-height: 70px;
+}

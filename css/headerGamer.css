@@ -1,0 +1,86 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border-bottom: 5px solid #3c7ccc;
+}
+.navegacao img{
+    width: 9%;
+    float: left;
+    margin-top: -17px;
+}
+.navegacao b{
+    color: #3c7ccc;
+    font-size: 30px;
+    float: left;
+    margin-right: 42px;
+}
+.navegacao span{
+    color: yellow;
+}
+.navegacao{
+    width: 97%;
+    margin: auto;
+    padding-top: 20px;
+}
+.navegacao ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+  
+}
+.navegacao ul li{
+    float: left;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-left: 3px solid yellow;
+    
+}
+.navegacao ul{
+    padding: 0;
+    float: left;
+    margin: 0;
+    
+}
+.navegacao ul ul{
+    display: none;
+    margin-top: 6px;
+    background-color: black;
+    margin-left: -3px;
+}
+.navegacao ul li:hover > ul{
+     display: block;
+}
+
+.btn_login{
+    background-color: #3c7ccc;
+    color: white;
+}
+.btn_cad{
+    background-color: #3c7ccc;
+    color: white;
+}
+.navegacao button{
+    width: 6%;
+    height: 30px;
+    margin-left: 4%;
+    border-radius: 15px;
+}
+.btn_login:hover{
+    background-color:white;
+    color: #3c7ccc;
+}
+.btn_cad:hover{
+    background-color: white;
+    color: #3c7ccc;
+}
+.navegacao li{
+    margin-bottom: 25px;
+}
