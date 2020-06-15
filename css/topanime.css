@@ -2,7 +2,7 @@
 .banner{
     width: 100%;
     height: 570px;
-    background: url('../imagens/bannerAnime.jpg') no-repeat;
+    background: url('../imagens/anime/bannerAnime.jpg') no-repeat;
     background-size: cover;
     text-align: center;
     
@@ -32,25 +32,37 @@
 }
 .introducao{
     margin-top: 84px;
-    width: 80%;
+    width: 100%;
     height: 250px;
-  
-
+    margin-bottom: 150px;
 }
 .introducao h1{
   padding-top: 10px;
     text-align: center;
     background-color: orange;
     width: 80%;
-    height: 60px;
+    height: 70px;
     border-radius: 50px;
+    font-size: 50px;
+    color: white;
 }
 .introducao p{
-    text-indent: 50px;
+    text-indent: 65px;
     width: 100%;
     height: 100px;
-    background-color: rgb(151, 150, 147);
     border-radius: 3px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.gif-introducao{
+    width: 15%;
+    float: left;
+    margin-left: 90px;
+}
+.gif2-introducao{
+    width: 20%;
+    float: right;
+    margin-right: 70px;
 }
 .slide{
     width: 100%;
@@ -100,9 +112,10 @@ float: left;
 }
 .btn-slide{
     width: 100%;
-    height: 70px;
-
+    height: 100px;
     text-align: center;
+    margin-top: 20px;
+    
 }
 .btn-slide button{
     width: 20%;
@@ -110,6 +123,10 @@ float: left;
     background-color: orange;
     cursor: pointer;
     color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    border: orangered 3px solid;
+
 
 }
 .btn-slide button:hover{

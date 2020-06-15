@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/slide-simples.js"></script>
 </head>
-<body>
+<body onload="slide1()">
     <div class="header">
         
         <div class="navegacao">
-            <img src="./imagens/logoAnime.png" alt="">
-            <b>Minha Infância <span>Anime</span></b>
+            <img src="./imagens/anime/meu-avatar-alegre.png" alt="">
+            <b>Minha Infância <span>anos 90</span></b>
             <ul>
                 <li><a href="">Home</a>
                     <ul><li><a href="">Nossa Loja</a></li></ul>
@@ -39,6 +41,20 @@
         </div>
         
 
+    </div>
+    
+    <div id= "caixa_slide">
+        <img class="img-fundo" src="imagens/home/fundo1.png" id="banner">
+        <a href=""><h1 id="txt_banner"></h1></a>
+        <img id="gif_banner" class="gif-sonic-slide" src="imagens/gamer/sonic2.gif" alt="">
+        <img id="gif_banner" class="gif-yoshi-slide" src="imagens/gamer/yoshi.gif" alt="">
+
+    </div>
+    <div class="box-btn">
+        <img onclick="slide1()" class="btn-slide" src="imagens/gamer/x.png" alt="">
+        <img onclick="slide2()" class="btn-slide" src="imagens/gamer/quadrado.png" alt="">
+        <img onclick="slide3()" class="btn-slide" src="imagens/gamer/o.png" alt="">
+        <img class="btn-slide" src="imagens/gamer/triangulo.png" alt="">
     </div>
 </body>
 </html>
