@@ -5,8 +5,12 @@ html body{
 .header{
     width: 100%;
     height: 80px;
+   /* background-color: black;
+    border-bottom: 5px solid #3c7ccc;*/
+    position: absolute;
+}
+.header:hover{
     background-color: black;
-    border-bottom: 5px solid #3c7ccc;
 }
 .navegacao img{
     width: 6%;

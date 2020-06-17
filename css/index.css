@@ -1,8 +1,10 @@
+#caixa_slide{
+
+}
 .img-fundo{
     width: 100%;
     height: 500px;
-    position: relative;
- 
+   
 }
 h1{
     margin: 0;
@@ -37,13 +39,26 @@ h1{
     width: 15%;
     transform: translate(-240%,120%);
     position: absolute;
-    display: none;
+  
 }
 .gif-yoshi-slide{
     width: 12%;
     transform: translate(-630%,155%);
     position: absolute;
-    display: none;
+ 
 }
-
+.avatares{
+ width: 100%;
+ height: 400px;
+ background-color: #3c7ccc;
+ display: inline-block;
+ text-align: center;
+}
+.avatares ul{
+    display: flex;
+    list-style: none;
+}
+.avatares img{
+    width: 150%;
+}
   
