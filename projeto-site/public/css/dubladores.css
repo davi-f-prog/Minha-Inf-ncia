@@ -1,0 +1,123 @@
+@font-face {
+    font-family: njnaruto;
+    src: url(../fonts/njnaruto.ttf)
+  }
+.introducao{
+    margin-top: 84px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 150px;
+}
+.introducao h1{
+  padding-top: 10px;
+    text-align: center;
+    background-color: orange;
+    width: 80%;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 50px;
+    color: white;
+}
+.introducao p{
+    text-indent: 65px;
+    width: 100%;
+    height: 100px;
+    border-radius: 3px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.gif-introducao{
+    width: 15%;
+    float: left;
+    margin-left: 90px;
+}
+.gif2-introducao{
+    width: 20%;
+    float: right;
+    margin-right: 70px;
+}
+.conteudo{
+    width: 100%;
+    height: 680px;
+    background-color: black;
+    padding-top: 10px;
+}
+.voz-dublador{
+    width: 50%;
+    height: 600px;
+
+    float: left;
+}
+.voz-dublador h1{
+    color: orange;
+    font-family: njnaruto;
+    text-align: center;
+}
+.voz-dublador img{
+    width: 50%;
+    margin-left: 23%;
+}
+.voz-dublador audio{
+    margin-left: 22%;
+    width: 50%;
+}
+.voz-dublador button{
+    margin-left: 37%;
+    width: 20%;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: orangered solid 3px;
+    height: 30px;
+    border-radius: 30px;
+
+}
+.question{
+    width: 45%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    display: block;
+}
+.question h1{
+    color: orangered;
+    font-family: njnaruto ;
+    text-align: center;
+}
+.titulo-pergunta1{
+   color: white !important;
+   font-size: 30px;
+}
+select{
+ 
+    width: 30%;
+    background-color: orangered;
+    color: white;
+}
+
+.msg_resposta{
+    margin-top: 300px;
+    font-size: 20px;
+}
+.img_resposta{
+    width: 18%;
+}
+.dublador{
+    display: none;
+}
+.dublador h1{
+     color: white;
+
+}
+.dublador img{
+    width: 13%;
+}
+.dublador p{
+    color: white;
+    margin-right: 20px;
+}
+.dublagem_hermes{
+    border-radius: 100px;
+    width: 8% !important;
+    margin-right: 2%;
+}

@@ -1,0 +1,62 @@
+1. Caso exista, apagar a pasta "node_modules"
+2. Caso exista, apagar o arquivo "package-lock.json"
+
+3. executar "npm i" e aguardar uns instantes, pois fará uns downloads
+
+4. executar "npm i -g nodemon"     (npm install mysql2)
+
+5. executar 
+nodemon --exec npm start
+  OU, CASO NÃO FUNCIONE
+npm start
+
+6. p/ testar acesse esses endereços no navegador:
+  localhost:3000/usuarios
+  localhost:3000/leituras/ultimas
+Deve aparecer o conteúdo das tabelas de usuário e de aquisição de dados
+<script>
+
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.name_user;
+                    sessionStorage.nome_usuario_meuapp = json.name_user;
+                    
+                    window.location.href = 'index.html';
+                });
+
+            } else {
+
+                alert('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
+
+</script>

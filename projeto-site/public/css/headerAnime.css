@@ -1,0 +1,116 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: njnaruto;
+    src: url(../fonts/njnaruto.ttf)
+  }
+   @font-face {
+    font-family: Heroes Legend Hollow;
+    src: url(../fonts/Heroes\ Legend\ Hollow.ttf)
+  }
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border-bottom: 7px solid orange;
+    
+}
+.navegacao img{
+    width: 9%;
+    float: left;
+    margin-top: -37px;
+}
+.navegacao b{
+    color: #3c7ccc;
+    font-size: 18px;
+    float: left;
+    margin-right: 42px;
+    font-family: Heroes Legend Hollow;
+}
+.navegacao span{
+    color: orange;
+    font-family: njnaruto;
+    font-size: 26px;
+   
+}
+.navegacao{
+    width: 97%;
+
+
+    margin: auto;
+    padding-top: 20px;
+}
+.navegacao ul li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+  
+}
+.navegacao ul li{
+    float: left;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    border-left: 3px solid orange;
+    
+}
+.navegacao ul{
+    padding: 0;
+    float: left;
+    margin: 0;
+    
+}
+.navegacao ul ul{
+    display: none;
+    margin-top: 6px;
+    background-color: black;
+    margin-left: -3px;
+}
+.navegacao ul li:hover > ul{
+     display: block;
+}
+.btn_login{
+    background-color: white;
+    color: #3c7ccc;
+}
+.btn_cad{
+    background-color: #3c7ccc;
+    color: white;
+}
+.navegacao button{
+    width: 6%;
+    height: 30px;
+    margin-left: 4%;
+    border-radius: 15px;
+}
+.btn_login:hover{
+    background-color:#3c7ccc;
+    color: white;
+}
+.btn_cad:hover{
+    background-color: white;
+    color: #3c7ccc;
+}
+.navegacao li{
+    margin-bottom: 25px;
+}
+.msg_welcome{
+    color: white;
+     font-size: 20px;
+     margin-left: 26px;
+     border: none !important; 
+}
+#b_usuario{
+    width: 20%;
+}
+.btn_sair{
+    text-decoration: none;
+    color: orange;
+    font-size: 25px;
+    float: right;
+
+}

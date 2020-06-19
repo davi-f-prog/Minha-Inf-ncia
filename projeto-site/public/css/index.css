@@ -1,0 +1,117 @@
+@font-face {
+    font-family: PixelGameFont;
+    src: url(../fonts/PixelGameFont.ttf)
+  }
+  @font-face {
+    font-family: njnaruto;
+    src: url(../fonts/njnaruto.ttf)
+  }
+   @font-face {
+    font-family: Heroes Legend Hollow;
+    src: url(../fonts/Heroes\ Legend\ Hollow.ttf)
+  }
+.img-fundo{
+    width: 100%;
+    height: 500px;
+   
+}
+h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    opacity:0.85;
+	-moz-opacity: 0.85;
+	filter: alpha(opacity=85);
+    padding: 0;
+    color: rgb(250, 250, 250);
+    font-size: 80px;
+    text-align: center;
+    border-radius: 30px;
+}
+.box-btn{
+    width: 100%;
+    height: 70px;
+    background-color:black;
+    border-top: #3c7ccc 7px solid;
+    margin-top: -4px;
+}
+.btn-slide{
+    width: 3%;
+    transform: translate(980%,50%);
+    margin-left: 6%;
+    cursor: pointer;
+}
+.gif-sonic-slide{
+    width: 15%;
+    transform: translate(-240%,120%);
+    position: absolute;
+  
+}
+.gif-yoshi-slide{
+    width: 12%;
+    transform: translate(-630%,155%);
+    position: absolute;
+ 
+}
+#txt_slide1{
+    transform: translate(-45%,-120%);
+    font-size: 30px;
+    color: black;
+    font-family: Heroes Legend Hollow;
+}
+#txt_slide1 a{
+ text-decoration: none;
+color: yellow;
+ font-size: 20px;
+}
+#txt_slide1 a:hover{
+
+    font-size: 55px;
+}
+#txt_slide2{
+    transform: translate(-50%,-100%);
+    font-family: PixelGameFont;
+    font-size: 50px;
+}
+#txt_slide2 a{
+ text-decoration: none;
+color: yellow;
+ font-size: 40px;
+}
+#txt_slide2 a:hover{
+
+    font-size: 55px;
+}
+#txt_slide3{
+    font-size: 50px;
+    font-family: njnaruto;
+    transform: translate(-45%,-80%);
+}
+#txt_slide3 a{
+    text-decoration: none;
+   color: orange;
+    font-size: 50px;
+   }
+#txt_slide3 a:hover{
+
+    font-size: 60px;
+}
+
+.avatares{
+ width: 100%;
+ height: 400px;
+ background-color: #3c7ccc;
+ display: inline-block;
+ text-align: center;
+}
+.avatares ul{
+    display: flex;
+    list-style: none;
+}
+.avatares img{
+    width: 150%;
+}
+  

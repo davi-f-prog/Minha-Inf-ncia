@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/headerAnime.css">
+    <link rel="stylesheet" href="css/dubladores.css">
+</head>
+<body>
+    <div class="header">
+        
+        <div class="navegacao">
+            <img src="./imagens/anime/logoAnime.png" alt="">
+            <b>Minha Infância <span>Anime</span></b>
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <ul><li><a href="">Nossa Loja</a></li></ul>
+                </li>
+                <li><a href="gamer.html">Gamer</a>
+                    <ul>
+                        <li><a href="topgamer.html">Top Gamer</a></li>
+                        <li><a href="">Top Arcade</a></li>
+                        <li><a href="">Consoles</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="anime.html">Anime</a>
+                    <ul>
+                        <li><a href="topanime.html">Top Anime</a></li>
+                        <li><a href="">Dubladores</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>
+
+                <li class="msg_welcome">Bem vindo <span id="b_usuario">?</span></li>
+            </ul>   
+           
+        <a class="btn_sair" onclick="logoff()" href="login.html">Sair</a>
+
+        </div>
+        
+
+    </div>
+
+    <center>
+        <div class="introducao">
+         <img class="gif-introducao" src="imagens/anime/hisoka.png" alt="">
+         <img class="gif2-introducao" src="imagens/anime/yusuke_urameshi.png" alt="">
+            <h1>Conheça os Dubladores</h1>
+         
+            <p> Quem nasceu nos anos 90 sabe o quão dificil era assistir os animes na época, pois a internet não 
+                era o auge do tempo, e eu dependia da tv para poder assistir. Tinhamos que torcer para que o horario da escola
+                não ficasse no mesmo tempo em que passasse os animes. Pois bem, eu tive muita sorte pois conseguia assistir uma boa 
+                parte dos animes. 
+            </p>
+            <p>E como já relatei antes, eu dependia da tv para assistir, então obviamente eu assistia tudo dublado. E sabemos
+                que muitas vozes dos personagens marcaram demais na época, e até hoje marcam, pois muitos ainda continuam dublando até
+                hoje. E o que seria de nóis sem a dedicação desses dubladores? Que emocionaram e interpretaram muito bem, varios momentos
+                emocionantes dos animes. 
+            </p>
+            <p>
+                Mas Chega de conversa, eu quero propor a você um desafio agora. Quero que você escute os áudios que coloquei com muito carinho
+                a baixo, e me responda se você reconhece essas vozes. Caso você saiba de qual personagem é essa voz , me responda então.
+                Mas tambem quero saber se você é realmente fã de verdade, será que você pode me dizer quem é o dublador? Reponda então ou descubra
+                quem são os personagens e os seus dubladores.
+            </p>
+        </div>
+       </center>
+
+       
+       <div class="conteudo"> 
+   
+           <div class="voz-dublador">
+               <h1>Voce sabe de quem e essa voz?</h1>
+               <img src="imagens/anime/seya2.png" alt="">
+               <audio  src="audio/voz_seya.mpeg" autoplay controls></audio>
+               <br> <br>
+               <button onclick="revelar1()">Revelar</button>
+           </div>
+              
+              <div class="question" id="question1">
+
+                  <h1>Agora me Responda:</h1>
+                  <h1 class="titulo-pergunta1">Quem e o personagem?</h1>
+
+                  <select name="" id="personagem1">
+                      <option value="naruto">Naruto</option>
+                      <option value="seya">Seya de Pegasus</option>
+                      <option value="goku">Goku</option>
+                      <option value="yusuke">Yusuke Urameshi</option>
+                  </select>
+
+                  <button onclick="verificar_pergunta1()">Responder</button>
+
+                  <br> <br>
+                  <span class="msg_resposta" id="msg_pergunta1"></span>
+                  <br>
+                  <img class="img_resposta" id="img_pergunta1" alt="">
+
+                  <h1 class="titulo-pergunta1">De quem e a voz?</h1>
+
+                  <select name="" id="dublador1">
+                      <option value="wendel">Wendel Bezerra</option>
+                      <option value="marco">Marco Ribeiro</option>
+                      <option value="ursula">Úrsula Luís Bezerra</option>
+                      <option value="hermes">Hermes Pereira Baroli</option>
+                  </select>
+
+                  <button onclick="verificar_pergunta2()">Responder</button>
+                  <br> <br>
+                  <span class="msg_resposta" id="msg_pergunta2"></span>
+                  <br>
+                  <img class="img_resposta" id="img_pergunta2" alt="">
+
+              </div>
+
+              <div class="dublador" id="historia_dublador1">
+                  <center>
+                   <h1 style="color: white;">Hermes Pereira Baroli</h1>
+                   <img src="imagens/anime/Hermes_Baroli.jpg" alt="">
+                   <p>Hermes Pereira Baroli (São Paulo, 21 de julho de 1976) é um ator, dublador e diretor de dublagem 
+                       brasileiro. Filho dos também atores e dubladores Gilberto Baroli e Zodja Pereira, irmão das atrizes e dubladoras Letícia Quinto 
+                       e meio-irmão de Luciana Baroli. Um dos seus trabalhos mais marcantes foi a dublagem do personagem Seiya de Pégaso, em Cavaleiros 
+                       do Zodíaco.Dublou também Matt Damon em O Resgate do Soldado Ryan, Manabu do seriado Sekai Ninja Sen Jiraiya, Edward Norton em Clube da Luta, 
+                       James Franco em 127 Horas e Ciclope (1ª voz) de X-Men Evolution.</p>
+                       <img class="dublagem_hermes" src="imagens/anime/ukon.png" alt="">
+                       <img  class="dublagem_hermes" src="imagens/anime/finn_hudson.png" alt="">
+                       <img  class="dublagem_hermes" src="imagens/anime/kei kurono.png" alt="">
+                       <img  class="dublagem_hermes" src="imagens/anime/MakoTsunami.png" alt="">
+                    </center>
+              </div>
+
+       </div>
+
+<!-- Segundo conteúdo de dublador-------------------------------------------------------------------------------  -->
+
+       <div class="conteudo"> 
+   
+        <div class="voz-dublador">
+            <h1>Voce sabe de quem e essa voz?</h1>
+            <img src="imagens/anime/yusuke_urameshi2.png" alt="">
+            <audio  src="audio/voz_yusuke.mpeg" autoplay controls></audio>
+            <br> <br>
+            <button onclick="revelar2()">Revelar</button>
+        </div>
+           
+           <div class="question" id="question1">
+
+               <h1>Agora me Responda:</h1>
+               <h1 class="titulo-pergunta1">Quem e o personagem?</h1>
+
+               <select name="" id="personagem1">
+                   <option value="naruto">Naruto</option>
+                   <option value="seya">Seya de Pegasus</option>
+                   <option value="goku">Goku</option>
+                   <option value="yusuke">Yusuke Urameshi</option>
+               </select>
+
+               <button onclick="verificar_pergunta1()">Responder</button>
+
+               <br> <br>
+               <span class="msg_resposta" id="msg_pergunta1"></span>
+               <br>
+               <img class="img_resposta" id="img_pergunta1" alt="">
+
+               <h1 class="titulo-pergunta1">De quem e a voz?</h1>
+
+               <select name="" id="dublador1">
+                   <option value="wendel">Wendel Bezerra</option>
+                   <option value="marco">Marco Ribeiro</option>
+                   <option value="ursula">Úrsula Luís Bezerra</option>
+                   <option value="hermes">Hermes Pereira Baroli</option>
+               </select>
+
+               <button onclick="verificar_pergunta2()">Responder</button>
+               <br> <br>
+               <span class="msg_resposta" id="msg_pergunta2"></span>
+               <br>
+               <img class="img_resposta" id="img_pergunta2" alt="">
+
+           </div>
+
+           <div class="dublador" id="historia_dublador1">
+               <center>
+                <h1 style="color: white;">Hermes Pereira Baroli</h1>
+                <img src="imagens/anime/Hermes_Baroli.jpg" alt="">
+                <p>Hermes Pereira Baroli (São Paulo, 21 de julho de 1976) é um ator, dublador e diretor de dublagem 
+                    brasileiro. Filho dos também atores e dubladores Gilberto Baroli e Zodja Pereira, irmão das atrizes e dubladoras Letícia Quinto 
+                    e meio-irmão de Luciana Baroli. Um dos seus trabalhos mais marcantes foi a dublagem do personagem Seiya de Pégaso, em Cavaleiros 
+                    do Zodíaco.Dublou também Matt Damon em O Resgate do Soldado Ryan, Manabu do seriado Sekai Ninja Sen Jiraiya, Edward Norton em Clube da Luta, 
+                    James Franco em 127 Horas e Ciclope (1ª voz) de X-Men Evolution.</p>
+                    <img class="dublagem_hermes" src="imagens/anime/ukon.png" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/finn_hudson.png" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/kei kurono.png" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/MakoTsunami.png" alt="">
+                 </center>
+           </div>
+
+    </div>
+   
+   
+</body>
+</html>
+<script>
+     function verificar_pergunta1(){
+           if(personagem1.value == "naruto" || personagem1.value == "goku" || personagem1.value == "yusuke"){
+            msg_pergunta1.innerHTML = `<span style="color: white;">Como ousa errar o cavaleiro de pegasus? Rsrsrsr
+               pelo visto me parece que você não sabe tão bem assim o personagem PEGASUS<br></span>`;
+
+               img_pergunta1.src = 'imagens/home/meu-avatar-bravo.png';
+               
+           }
+           else{
+            msg_pergunta1.innerHTML =`<span style="color: white;">Seria Surpreedente se errasse! Mas meus parabéns,
+            você realmente conhece o Seya de Pegasus<br></span>`
+
+            img_pergunta1.src = 'imagens/home/meu-avatar-alegre.png';
+           }
+     }
+  function verificar_pergunta2(){
+           if(dublador1.value=="wendel" || dublador1.value=="marco" || dublador1.value== "ursula"){
+            msg_pergunta2.innerHTML = `<span style="color: white;">Errouuuuuuu!!(imagine o faustão falando),
+            Pois bem, já imagina isso, você não é tão fã quanto eu.<br></span>`;
+
+            img_pergunta2.src = 'imagens/home/meu-avatar-gato.png';
+           }
+           else{
+            msg_pergunta2.innerHTML = `<span style="color: white;">Ai  que legal! Você realmente sabe, meus parabéns<br></span>`;
+
+            img_pergunta2.src = 'imagens/home/meu-avatar-alegre.png';
+           }
+     } 
+
+     function revelar1(){
+        historia_dublador1.style.display = 'block';
+           question1.style.display = 'none';
+     }    
+</script>

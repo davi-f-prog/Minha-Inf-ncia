@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+</head>
+<body>
+    <div class="conteudo">
+          <div class="bloco text "> 
+              <h1>Foi feito o pedido para Shenlong<br>
+                Você está pronto para viajar no tempo?</h1>
+             </div>
+             <div class="bloco login">
+                 <h1>Minha Infância</h1>
+                 <img src="imagens/anime/meu-avatar-alegre.png" alt="">
+                 <h1>Login</h1>
+               <form action="" id="form_login" method="post" onsubmit="return entrar()">
+                   <label for="usuario">Usuario:</label>
+                   <input type="text" id="usuario" name="login">
+
+                   <label for="senha">Senha:</label>
+                   <input type="password" id="senha" name="senha">
+
+                   <input class="btn-entrar" type="submit" value="Start">
+               </form>
+               <div class="msg-cadastro">
+                   <b>Ainda Não se Cadastrou?<br>
+                           <a href="cadastro.html">Cadastra-se</a>
+                           
+                   </b>
+                   
+               </div>
+               
+             </div>
+    </div>
+</body>
+</html>
+<script>
+
+function entrar() {
+    var formulario = new URLSearchParams(new FormData(form_login));
+    fetch("/usuarios/autenticar", {
+        method: "POST",
+        body: formulario
+    }).then(resposta => {
+        
+        if (resposta.ok) {
+
+            resposta.json().then(json => {
+
+                sessionStorage.login_usuario_meuapp = json.Usuario;
+                sessionStorage.nome_usuario_meuapp = json.Usuario;
+                
+                window.location.href = 'index.html';
+            });
+
+        } else {
+
+            alert('Erro de login!');
+
+            response.text().then(texto => {
+                console.error(texto);
+                finalizar_aguardar(texto);
+            });
+        }
+    });
+
+    return false;
+}
+
+function aguardar() {
+    btn_entrar.disabled = true;
+    img_aguarde.style.display='block';
+    div_erro.style.display='none';
+}
+
+function finalizar_aguardar() {
+    btn_entrar.disabled = false;
+    img_aguarde.style.display='none';
+    div_erro.style.display='block';
+}
+
+</script>
