@@ -53,9 +53,9 @@ function proximo(){
      txt11.style.display = 'none';
    }
    else if(contador == 4){
-     img_anime.src = 'imagens/gamer/mario-kard.gif';
-     slide_img.style.backgroundImage = "url('imagens/gamer/fundo-mario-kard.png')";
-     txt_slide.style.backgroundColor = '#b0ff70';
+     img_anime.src = 'imagens/gamer/zelda-gif.gif';
+     slide_img.style.backgroundImage = "url('imagens/gamer/fundo-zelda.png')";
+     txt_slide.style.backgroundColor = '#4b9a49';
      txt1.style.display = 'none';
      txt2.style.display = 'none';
      txt3.style.display = 'none';
@@ -117,8 +117,8 @@ function proximo(){
      txt11.style.display = 'none';
    }
    else if(contador == 8){
-     slide_img.style.backgroundImage = "url('imagens/anime/fundohunter.png')";
-     txt_slide.style.backgroundColor = '#2b4b4c';
+     slide_img.style.backgroundImage = "url('imagens/gamer/fundo-bonanza-bros.png')";
+     txt_slide.style.backgroundColor = '#220021';
      img_anime.src = 'imagens/gamer/bonanza-brother.gif';
      txt1.style.display = 'none';
      txt2.style.display = 'none';
@@ -133,9 +133,9 @@ function proximo(){
      txt11.style.display = 'none';
    }
    else if(contador == 9){
-     slide_img.style.backgroundImage = "url('imagens/anime/fundohakusho.jpg')";
-     txt_slide.style.backgroundColor = '#393567';
-     img_anime.src = 'imagens/gamer/california-games.gif';
+     slide_img.style.backgroundImage = "url('imagens/gamer/fundo-residente-evil3.jpg')";
+     txt_slide.style.backgroundColor = '#413d34';
+     img_anime.src = 'imagens/gamer/resident-evil.gif';
      txt1.style.display = 'none';
      txt2.style.display = 'none';
      txt3.style.display = 'none';
@@ -149,9 +149,9 @@ function proximo(){
      txt11.style.display = 'none';
    }
    else if(contador == 10){
-     slide_img.style.backgroundImage = "url('imagens/anime/fundodigimon.jpg')";
-     txt_slide.style.backgroundColor = '#4f97d1';
-     img_anime.src = 'imagens/gamer/final-fantasy.gif';
+     slide_img.style.backgroundImage = "url('imagens/gamer/fundo-macaco.png')";
+     txt_slide.style.backgroundColor = '#075204';
+     img_anime.src = 'imagens/gamer/donkey-kong.gif';
      txt1.style.display = 'none';
      txt2.style.display = 'none';
      txt3.style.display = 'none';
@@ -166,8 +166,8 @@ function proximo(){
 
    }
    else if(contador == 11){
-    slide_img.style.backgroundImage = "url('imagens/anime/floresta-anime.png')";
-    txt_slide.style.backgroundColor = 'rgb(6, 158, 39)';
+    slide_img.style.backgroundImage = "url('imagens/gamer/fundo-street-fighter.jpg')";
+    txt_slide.style.backgroundColor = '#856445';
     img_anime.src = 'imagens/gamer/street-fighter.gif';
     txt1.style.display = 'none';
     txt2.style.display = 'none';

@@ -40,11 +40,12 @@ html body{
   
 }
 .nav1 ul li a{
-    color: #3b85d8;
+    color: orangered;
 }
 .nav1 ul li{
     border: none;
-    border-left: 7px solid #3b85d8;
+    border-left: 7px solid orangered;
+    background-color: rgb(44, 42, 42);
 }
 .nav1 li:hover > ul{
     display: block;
@@ -73,12 +74,12 @@ html body{
     
   }
   .nav2 ul li a{
-      color: orange;
+      color: orangered;
   }
   .nav2 ul li{
-      color: orange;
-      border: none;
-      border-left: 7px solid orange;
+    border: none;
+    border-left: 7px solid orangered;
+    background-color: rgb(44, 42, 42);
   }
   .nav2 li:hover > ul{
       display: block;

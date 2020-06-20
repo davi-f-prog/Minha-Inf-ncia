@@ -43,8 +43,10 @@ html body{
     color: #3b85d8;
 }
 .nav1 ul li{
+    color: #3b85d8;
     border: none;
     border-left: 7px solid #3b85d8;
+    background-color: black;
 }
 .nav1 li:hover > ul{
     display: block;
@@ -73,13 +75,16 @@ html body{
     
   }
   .nav2 ul li a{
-      color: blue;
+      color: #3b85d8;
   }
   .nav2 ul li{
-      color: blue;
-      border: none;
-      border-left: 7px solid blue;
+    color: #3b85d8;
+    border: none;
+    border-left: 7px solid #3b85d8;
+    background-color: black;
+  
   }
+
   .nav2 li:hover > ul{
       display: block;
   }

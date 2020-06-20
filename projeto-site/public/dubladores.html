@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/headerAnime.css">
     <link rel="stylesheet" href="css/dubladores.css">
+    <script src="js/dubladores.js"></script>
+    <script type="text/javascript" src="js/funcoes.js"></script>
 </head>
 <body>
     <div class="header">
@@ -68,18 +70,21 @@
         </div>
        </center>
 
+       <!--------------------------------------Dublador 1-------------------------------------------------------------->
        
-       <div class="conteudo"> 
+       <div class="conteudo-preto"> 
    
            <div class="voz-dublador">
                <h1>Voce sabe de quem e essa voz?</h1>
                <img src="imagens/anime/seya2.png" alt="">
-               <audio  src="audio/voz_seya.mpeg" autoplay controls></audio>
+               <audio  src="audio/voz_seya.mpeg"  controls></audio>
                <br> <br>
-               <button onclick="revelar1()">Revelar</button>
+               <button onclick="revelar_dublador1()">Revelar</button>
            </div>
+
+           <!--pergunta 1-->
               
-              <div class="question" id="question1">
+              <div class="question" id="dublador1_question">
 
                   <h1>Agora me Responda:</h1>
                   <h1 class="titulo-pergunta1">Quem e o personagem?</h1>
@@ -91,12 +96,14 @@
                       <option value="yusuke">Yusuke Urameshi</option>
                   </select>
 
-                  <button onclick="verificar_pergunta1()">Responder</button>
+                  <button onclick="dublador1_pergunta1()">Responder</button>
 
                   <br> <br>
-                  <span class="msg_resposta" id="msg_pergunta1"></span>
+                  <span class="msg_resposta" id="resposta1_dublador1"></span>
                   <br>
-                  <img class="img_resposta" id="img_pergunta1" alt="">
+                  <img class="img_resposta" id="img_resposta1_dublador1" alt="">
+
+                  <!--pergunta 2-->
 
                   <h1 class="titulo-pergunta1">De quem e a voz?</h1>
 
@@ -107,13 +114,15 @@
                       <option value="hermes">Hermes Pereira Baroli</option>
                   </select>
 
-                  <button onclick="verificar_pergunta2()">Responder</button>
+                  <button onclick="dublador1_pergunta2()">Responder</button>
                   <br> <br>
-                  <span class="msg_resposta" id="msg_pergunta2"></span>
+                  <span class="msg_resposta" id="resposta2_dublador1"></span>
                   <br>
-                  <img class="img_resposta" id="img_pergunta2" alt="">
+                  <img class="img_resposta" id="img_resposta2_dublador1" alt="">
 
               </div>
+              
+              <!--Revelar dublador 1-->
 
               <div class="dublador" id="historia_dublador1">
                   <center>
@@ -133,107 +142,217 @@
 
        </div>
 
-<!-- Segundo conteúdo de dublador-------------------------------------------------------------------------------  -->
+<!-- -------------==================================Segundo conteúdo de dublador--------------------------------  -->
 
-       <div class="conteudo"> 
+       <div class="conteudo-verde"> 
    
         <div class="voz-dublador">
             <h1>Voce sabe de quem e essa voz?</h1>
             <img src="imagens/anime/yusuke_urameshi2.png" alt="">
-            <audio  src="audio/voz_yusuke.mpeg" autoplay controls></audio>
+            <audio  src="audio/voz_yusuke.mpeg"  controls></audio>
             <br> <br>
-            <button onclick="revelar2()">Revelar</button>
+            <button onclick="revelar_dublador2()">Revelar</button>
         </div>
            
-           <div class="question" id="question1">
+           <div class="question" id="dublador2_question">
 
                <h1>Agora me Responda:</h1>
                <h1 class="titulo-pergunta1">Quem e o personagem?</h1>
 
-               <select name="" id="personagem1">
+               <select name="" id="personagem2">
                    <option value="naruto">Naruto</option>
                    <option value="seya">Seya de Pegasus</option>
                    <option value="goku">Goku</option>
                    <option value="yusuke">Yusuke Urameshi</option>
                </select>
 
-               <button onclick="verificar_pergunta1()">Responder</button>
+               <button onclick="dublador2_pergunta1()">Responder</button>
 
                <br> <br>
-               <span class="msg_resposta" id="msg_pergunta1"></span>
+               <span class="msg_resposta" id="resposta1_dublador2"></span>
                <br>
-               <img class="img_resposta" id="img_pergunta1" alt="">
+               <img class="img_resposta" id="img_resposta1_dublador2" alt="">
 
                <h1 class="titulo-pergunta1">De quem e a voz?</h1>
 
-               <select name="" id="dublador1">
+               <select name="" id="dublador2">
                    <option value="wendel">Wendel Bezerra</option>
                    <option value="marco">Marco Ribeiro</option>
                    <option value="ursula">Úrsula Luís Bezerra</option>
                    <option value="hermes">Hermes Pereira Baroli</option>
                </select>
 
-               <button onclick="verificar_pergunta2()">Responder</button>
+               <button onclick="dublador2_pergunta2()">Responder</button>
                <br> <br>
-               <span class="msg_resposta" id="msg_pergunta2"></span>
+               <span class="msg_resposta" id="resposta2_dublador2"></span>
                <br>
-               <img class="img_resposta" id="img_pergunta2" alt="">
+               <img class="img_resposta" id="img_resposta2_dublador2" alt="">
 
            </div>
 
-           <div class="dublador" id="historia_dublador1">
+           <div class="dublador" id="historia_dublador2">
                <center>
-                <h1 style="color: white;">Hermes Pereira Baroli</h1>
-                <img src="imagens/anime/Hermes_Baroli.jpg" alt="">
-                <p>Hermes Pereira Baroli (São Paulo, 21 de julho de 1976) é um ator, dublador e diretor de dublagem 
-                    brasileiro. Filho dos também atores e dubladores Gilberto Baroli e Zodja Pereira, irmão das atrizes e dubladoras Letícia Quinto 
-                    e meio-irmão de Luciana Baroli. Um dos seus trabalhos mais marcantes foi a dublagem do personagem Seiya de Pégaso, em Cavaleiros 
-                    do Zodíaco.Dublou também Matt Damon em O Resgate do Soldado Ryan, Manabu do seriado Sekai Ninja Sen Jiraiya, Edward Norton em Clube da Luta, 
-                    James Franco em 127 Horas e Ciclope (1ª voz) de X-Men Evolution.</p>
-                    <img class="dublagem_hermes" src="imagens/anime/ukon.png" alt="">
-                    <img  class="dublagem_hermes" src="imagens/anime/finn_hudson.png" alt="">
-                    <img  class="dublagem_hermes" src="imagens/anime/kei kurono.png" alt="">
-                    <img  class="dublagem_hermes" src="imagens/anime/MakoTsunami.png" alt="">
+                <h1 style="color: white;">Marco Ribeiro</h1>
+                <img src="imagens/anime/Marco_Ribeiro.jpg" alt="">
+                <p>Marco Antônio Ribeiro da Silva (Rio de Janeiro, 22 de Agosto de 1970) é um dublador, diretor de dublagem e 
+                    religioso brasileiro. É conhecido por seus trabalhos de dublagem de filmes americanos, como a maioria dos 
+                    filmes estrelados por Jim Carrey, Tom Hanks e Robert Downey Jr.
+                    Começou a dublar em 1986 na Herbert Richers. É primo do também dublador Duda Ribeiro, e pai do dublador 
+                    Renan Ribeiro.</p>
+                    <img class="dublagem_hermes" src="imagens/anime/michael-kyle.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/yudi.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/mascara.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/homem-de-ferro.jpg" alt="">
                  </center>
            </div>
 
     </div>
+
+    <!------------------------------------Terceiro Conteudo Dublador----------------------------------------------------------------->
    
+    <div class="conteudo-rosa"> 
    
+        <div class="voz-dublador">
+            <h1>Voce sabe de quem e essa voz?</h1>
+            <img src="imagens/anime/sailor-moon.jpg" alt="">
+            <audio  src="audio/voz-sailor.mpeg"  controls></audio>
+            <br> <br>
+            <button onclick="revelar_dublador3()">Revelar</button>
+        </div>
+           
+           <div class="question" id="dublador3_question">
+
+               <h1>Agora me Responda:</h1>
+               <h1 class="titulo-pergunta1">Quem e o personagem?</h1>
+
+               <select name="" id="personagem3">
+                   <option value="sakura">Sakura Haruno</option>
+                   <option value="usagi">Usagi Tsukino</option>
+                   <option value="sailor">Sailor Moon</option>
+                   <option value="hancock">Boa Hancock</option>
+               </select>
+
+               <button onclick="dublador3_pergunta1()">Responder</button>
+
+               <br> <br>
+               <span class="msg_resposta" id="resposta1_dublador3"></span>
+               <br>
+               <img class="img_resposta" id="img_resposta1_dublador3" alt="">
+
+               <h1 class="titulo-pergunta1">De quem e a voz?</h1>
+
+               <select name="" id="dublador3">
+                   <option value="wendel">Wendel Bezerra</option>
+                   <option value="marco">Marli Bortoletto</option>
+                   <option value="ursula">Úrsula Luís Bezerra</option>
+                   <option value="hermes">Hermes Pereira Baroli</option>
+               </select>
+
+               <button onclick="dublador3_pergunta2()">Responder</button>
+               <br> <br>
+               <span class="msg_resposta" id="resposta2_dublador3"></span>
+               <br>
+               <img class="img_resposta" id="img_resposta2_dublador3" alt="">
+
+           </div>
+
+           <div class="dublador" id="historia_dublador3">
+               <center>
+                <h1 style="color: white;">Marli Bortoletto</h1>
+                <img src="imagens/anime/marli-bortoletto.png" alt="">
+                <p>Marli Bortoletto (São Bernardo do Campo, 16 de janeiro de 1959) é uma atriz e dubladora brasileira.
+                     Marli é conhecida por ser a voz oficial da personagem Mônica.
+                     Na dublagem, é conhecida por ser a voz oficial da personagem Mônica do cartunista Mauricio de Sousa. 
+                     m animes, dublou a personagem Sailor Moon, Hilda de Polaris em Os Cavaleiros do Zodíaco. E em 
+                     jogos dublou a personagem Fiora no jogo League of Legends</p>
+                    <img class="dublagem_hermes" src="imagens/anime/minnie.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/fiora.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/hilda.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/monica.png" alt="">
+                 </center>
+           </div>
+
+    </div>
+
+    <!-----------------------------------------Quarto Conteudo Dublador------------------------------------------------------>
+
+    <div class="conteudo-azul"> 
+   
+        <div class="voz-dublador">
+            <h1>Voce sabe de quem e essa voz?</h1>
+            <img src="imagens/anime/goku.jpg" alt="">
+            <audio  src="audio/voz-goku.mpeg"  controls></audio>
+            <br> <br>
+            <button onclick="revelar_dublador4()">Revelar</button>
+        </div>
+           
+           <div class="question" id="dublador4_question">
+
+               <h1>Agora me Responda:</h1>
+               <h1 class="titulo-pergunta1">Quem e o personagem?</h1>
+
+               <select name="" id="personagem4">
+                   <option value="ikki">Ikki de Fênix</option>
+                   <option value="goku">Goku</option>
+                   <option value="madara">Madara Uchiha</option>
+                   <option value="neji">Neji Hyuga</option>
+               </select>
+
+               <button onclick="dublador4_pergunta1()">Responder</button>
+
+               <br> <br>
+               <span class="msg_resposta" id="resposta1_dublador4"></span>
+               <br>
+               <img class="img_resposta" id="img_resposta1_dublador4" alt="">
+
+               <h1 class="titulo-pergunta1">De quem e a voz?</h1>
+
+               <select name="" id="dublador4">
+                   <option value="wendel">Wendel Bezerra</option>
+                   <option value="marco">Marli Bortoletto</option>
+                   <option value="ursula">Úrsula Luís Bezerra</option>
+                   <option value="hermes">Hermes Pereira Baroli</option>
+               </select>
+
+               <button onclick="dublador4_pergunta2()">Responder</button>
+               <br> <br>
+               <span class="msg_resposta" id="resposta2_dublador4"></span>
+               <br>
+               <img class="img_resposta" id="img_resposta2_dublador4" alt="">
+
+           </div>
+
+           <div class="dublador" id="historia_dublador4">
+               <center>
+                <h1 style="color: white;">Wendel Bezerra</h1>
+                <img src="imagens/anime/Wendel_Bezerra.jpg" alt="">
+                <p>Wendel Luís Bezerra da Silva (São Paulo, 18 de junho de 1974) é um ator, dublador, diretor de dublagem, 
+                    locutor e youtuber brasileiro, na área desde os oito anos de idade.Também dirige a dublagem de séries 
+                    e filmes. Tem quatro irmãos, dos quais dois também seguem a carreira de dublador, Ulisses e Úrsula 
+                    Bezerra. Entre seus trabalhos mais famosos, estão a dublagem de Buddy Valastro (de Cake Boss), de Goku 
+                    (Dragon Ball),Gamgi (Sam) da trilogia Senhor dos Anéis; Lee Sin e willump robotico (do game League of Legends).
+                </p>
+                    <img class="dublagem_hermes" src="imagens/anime/pain.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/bob_esponja.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/edward.jpg" alt="">
+                    <img  class="dublagem_hermes" src="imagens/anime/jackie c.jpg" alt="">
+                 </center>
+           </div>
+
+    </div>
+    
+    <div class="rodape">
+        <img src="imagens/home/facebook.png" class="logo_rede_social">
+        <img src="imagens/home/instagram.png" class="logo_rede_social">
+        <img src="imagens/home/linkedin.png" class="logo_rede_social">
+        <ul>
+          <li class="copyright">&copy; Minha Infância 2020</li>
+        
+          <li class="txt_fale_conosco">Siga-me nas redes sociais</li>
+        </ul>
+      </div>
 </body>
 </html>
 <script>
-     function verificar_pergunta1(){
-           if(personagem1.value == "naruto" || personagem1.value == "goku" || personagem1.value == "yusuke"){
-            msg_pergunta1.innerHTML = `<span style="color: white;">Como ousa errar o cavaleiro de pegasus? Rsrsrsr
-               pelo visto me parece que você não sabe tão bem assim o personagem PEGASUS<br></span>`;
-
-               img_pergunta1.src = 'imagens/home/meu-avatar-bravo.png';
-               
-           }
-           else{
-            msg_pergunta1.innerHTML =`<span style="color: white;">Seria Surpreedente se errasse! Mas meus parabéns,
-            você realmente conhece o Seya de Pegasus<br></span>`
-
-            img_pergunta1.src = 'imagens/home/meu-avatar-alegre.png';
-           }
-     }
-  function verificar_pergunta2(){
-           if(dublador1.value=="wendel" || dublador1.value=="marco" || dublador1.value== "ursula"){
-            msg_pergunta2.innerHTML = `<span style="color: white;">Errouuuuuuu!!(imagine o faustão falando),
-            Pois bem, já imagina isso, você não é tão fã quanto eu.<br></span>`;
-
-            img_pergunta2.src = 'imagens/home/meu-avatar-gato.png';
-           }
-           else{
-            msg_pergunta2.innerHTML = `<span style="color: white;">Ai  que legal! Você realmente sabe, meus parabéns<br></span>`;
-
-            img_pergunta2.src = 'imagens/home/meu-avatar-alegre.png';
-           }
-     } 
-
-     function revelar1(){
-        historia_dublador1.style.display = 'block';
-           question1.style.display = 'none';
-     }    
+    verificar_autenticacao()
 </script>

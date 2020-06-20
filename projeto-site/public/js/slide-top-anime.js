@@ -1,7 +1,7 @@
 var contador = 1;
 function proximo(){
    contador++
-   if(contador > 11){
+   if(contador > 10){
       contador = 1
   }
   if(contador == 1){
@@ -165,22 +165,6 @@ function proximo(){
      txt11.style.display = 'none';
 
    }
-   else if(contador == 11){
-    slide_img.style.backgroundImage = "url('imagens/anime/floresta-anime.png')";
-    txt_slide.style.backgroundColor = 'rgb(6, 158, 39)';
-    img_anime.src = 'imagens/anime/one-piece.gif';
-    txt1.style.display = 'none';
-    txt2.style.display = 'none';
-    txt3.style.display = 'none';
-    txt4.style.display = 'none';
-    txt5.style.display = 'none';
-    txt6.style.display = 'none';
-    txt7.style.display = 'none';
-    txt8.style.display = 'none';
-    txt9.style.display = 'none';
-    txt10.style.display = 'none';
-    txt11.style.display = 'block';
-   }
    msg.innerHTML = contador;
     
 }
@@ -188,7 +172,7 @@ function anterior(){
   
   contador--
   if(contador < 1){
-      contador = 11
+      contador = 10
   }
   if(contador == 1){
     slide_img.style.backgroundImage = "url('imagens/anime/constelação.jpg')";
@@ -351,22 +335,7 @@ function anterior(){
       txt11.style.display = 'none';
  
     }
-    else if(contador == 11){
-     slide_img.style.backgroundImage = "url('imagens/anime/floresta-anime.png')";
-     txt_slide.style.backgroundColor = 'rgb(6, 158, 39)';
-     img_anime.src = 'imagens/anime/one-piece.gif';
-     txt1.style.display = 'none';
-     txt2.style.display = 'none';
-     txt3.style.display = 'none';
-     txt4.style.display = 'none';
-     txt5.style.display = 'none';
-     txt6.style.display = 'none';
-     txt7.style.display = 'none';
-     txt8.style.display = 'none';
-     txt9.style.display = 'none';
-     txt10.style.display = 'none';
-     txt11.style.display = 'block';
-    }
+
     msg.innerHTML = contador;
      
  }

@@ -56,9 +56,18 @@ html body{
 }
 .navegacao ul ul{
     display: none;
-    margin-top: 6px;
+    margin-top: 6px; 
     background-color: black;
     margin-left: -3px;
+}
+.navegacao ul ul li{
+    color: #3b85d8;
+    border: none;
+    border-left: 3px solid #3b85d8;
+   
+}
+.navegacao ul ul li a{
+    color: #3b85d8;
 }
 .navegacao ul li:hover > ul{
      display: block;
@@ -96,6 +105,9 @@ html body{
      border: none !important;
      width: 200px;
    
+}
+#b_usuario{
+    font-family:  Heroes Legend Hollow ;
 }
 .btn_sair{
     text-decoration: none;
