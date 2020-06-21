@@ -1,0 +1,63 @@
+body{
+    background-image: url(../imagens/home/fliperama-fundo.png);
+   background-size: cover;
+   margin: 0;
+}
+@font-face {
+    font-family: Heroes Legend Hollow;
+    src: url(../fonts/Heroes\ Legend\ Hollow.ttf)
+  }
+  @keyframes anima-cadastro{
+      0%{
+          transform: translate(0%,-300%);
+      }
+
+      100%{
+        transform: translate(0%,0%);
+      }
+  }  
+.box-cadastro{
+    width: 30%;
+    height: 450px;
+    background-color: black;
+    text-align: center;
+    margin-left: 36%;
+    margin-top: 10%;
+    border-radius: 20px;
+    border: 7px #3c7ccc solid;
+    color: white;
+    animation-name: anima-cadastro;
+    animation-duration: 3s;
+}
+.box-cadastro h1{
+   margin: 0;
+    font-family: Heroes Legend Hollow;
+    color: #3c7ccc;
+    font-size: 24px;
+}
+form input{
+    margin-bottom: 3%;
+}
+h2{
+    margin: 0;
+    margin-bottom: 3%;
+}
+.btn-cadastrar{
+  background-color: #3c7ccc;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.btn-cadastrar:hover{
+    background-color: yellow;
+}
+.img-aguarde{
+    width: 18%;
+    display: none;
+    margin-left: 41%;
+    margin-top: 2%;
+}
+input{
+    border: none;
+}

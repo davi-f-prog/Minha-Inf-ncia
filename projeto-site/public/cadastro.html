@@ -6,26 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página com exemplo de Cadastro de usuário</title>
+    <link rel="stylesheet" href="css/cadastro.css">
 
 </head>
 
 <body>
+    <div class="box-cadastro">
+        <h1>Minha Infância</h1>
+        <img src="imagens/home/meu-avatar-alegre.png" alt="">
+        <h2>Cadastre-se</h2>
 
     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-        Nome: <input type="text" name="nome" required minlength="4">
+        Nome: 
         <br>
-        Usuário: <input type="text" name="login" required minlength="4">
+        <input type="text" name="nome" required minlength="4">
         <br>
-        Senha: <input type="password" name="senha" required minlength="4">
+        
+        Usuário: 
         <br>
-        <button id="btn_entrar">Cadastrar</button>
+        <input type="text" name="login" required minlength="4">
+        <br>
+        
+        Senha: 
+        <br>
+        <input  type="password" name="senha" required minlength="4">
+        <br>
+        
+        <button class="btn-cadastrar" id="btn_entrar">Cadastrar</button>
     </form>
     
-    <img src="aguarde2.gif" id="img_aguarde" style="display: none;" width="100px">
+    <img  src="imagens/home/carregando.gif" id="img_aguarde" class="img-aguarde">
     
     <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
         Erro no cadastro
     </div>
+
+</div>
 
 </body>
 
