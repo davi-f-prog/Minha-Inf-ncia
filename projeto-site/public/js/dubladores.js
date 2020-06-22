@@ -93,7 +93,7 @@ function dublador3_pergunta1(){
 }
 function dublador3_pergunta2(){
     if(dublador3.value=="wendel" || dublador3.value=="hermes" || dublador3.value== "ursula"){
-     resposta2_dublador3.innerHTML = `<span style="color: white;">Tudo bem, tudo bem. è normal errar isso!("como ele conseguiu erra isso")
+     resposta2_dublador3.innerHTML = `<span style="color: white;">Tudo bem, tudo bem. è normal errar isso!("como ele conseguiu errar isso?")
          <br></span>`;
 
      img_resposta2_dublador3.src = 'imagens/home/meu-avatar-sailor6.png';

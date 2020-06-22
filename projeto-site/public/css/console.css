@@ -1,0 +1,258 @@
+.introducao{
+    width: 100%;
+    height: 860px;
+ 
+}
+.introducao h1{
+    color: rgb(39, 37, 37);
+    text-align: center;
+    font-size: 50px;
+}
+
+hr{
+    width: 80%;
+    height: 14px;
+    background-color: #3c7ccc;
+    border-radius: 20px;
+    border: none;
+}
+.introducao img{
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.introducao img:hover{
+    transform: scale(1.5); 
+    transition-duration: 1s;
+    align-self: center;
+}
+.conteudo{
+    width: 100%;
+    height: 6000px;
+    background-color: black;
+}
+.apresentacao{
+    width: 100%;
+    height: 510px;
+   
+}
+.apresentacao h1{
+    color: white;
+    background-color: #3c7ccc;
+    text-align: center;
+    width: 65%;
+    margin-left: 20%;
+    border-radius: 20px;
+    font-size: 45px;
+}
+.img-supernitendo{
+    width: 20%;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: -8%;
+}
+.img-megadrive{
+    width: 25%;
+    position: absolute;
+    margin-left: 66%;
+    margin-top: -8%;
+    
+}
+.apresentacao p{
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 5%;
+    font-size: 17px;
+    color: white;
+}
+.console1{
+    margin-top: 5%;
+    width: 100%;
+    height: 660px;
+
+}
+.console1 img{
+ width: 10%;
+ margin-left: 16.3%;
+ 
+}
+.img-console1{
+    width: 30% !important;
+    margin-top: 12%;
+    margin-left: 20% !important;
+    border-radius: 20px;
+}
+.conteudo-console{
+    width: 82%;
+    height: 350px;
+  
+    margin-top: 8%;
+    padding-left: 18%;
+  
+}
+.conteudo-escondido{
+    padding-top: 2%;
+    width: 40%;
+    height: 350px;
+ 
+    float: left;
+}
+.conteudo-escondido li{
+    margin-top: 2%;
+}
+.conteudo-escondido img{
+    position: absolute;
+    width: 37%;
+    height: 49%;
+    margin-left: 0%;
+    border-radius: 20px;
+}
+.conteudo-escondido img:hover{
+    transform: translate(88.5%,0%);
+    transition-duration: 2s;
+}
+.conteudo-escondido ul{
+    background-color: rgb(20, 140, 220);
+    border-radius: 20px;
+    color: white;
+}
+.descricao-console{
+    width: 40%;
+    height: 245px;
+    background-color: crimson;
+    float: left;
+    padding: 2% 6% 6% 6%;
+    border-radius: 20px;
+    color: white;
+}
+ /* Animação dos icones primeiro conteudo console  */
+
+ .console-icone1{
+    width: 100%;
+   display: none;
+
+ }
+ .anima-icone1{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone1;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone1{
+       0%{
+        transform: translate(-1000%,0%);
+       }
+       100%{
+           transform: translate(0%,0%);
+       }
+ }
+ 
+ .console-icone2{
+    width: 100%;
+    display: none;
+ }
+ .anima-icone2{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone2;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone2{
+    0%{
+     transform: translate(-1000%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+ .console-icone3{
+    width: 100%;
+    display: none;
+ }
+ .anima-icone3{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone3;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone3{
+    0%{
+     transform: translate(-1000%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+ .console-icone4{
+    width: 100%;
+    display: none;
+ }
+ .anima-icone4{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone4;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone4{
+    0%{
+     transform: translate(-1000%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+ .console-icone5{
+    width: 100%;
+    display: none;
+ }
+ .anima-icone5{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone5;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone5{
+    0%{
+     transform: translate(-1000%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+ .console-icone6{
+    width: 100%;
+    display: none;
+ }
+ .anima-icone6{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone6;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone6{
+    0%{
+     transform: translate(-1000%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+ .console-icone7{
+    width: 100%;
+    display: none;
+ }
+ .anima-icone7{
+    width: 100%;
+    display: block;
+    animation-name: anima-icone7;
+    animation-duration: 1s;
+ }
+ @keyframes anima-icone7{
+    0%{
+     transform: translate(-1000%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}

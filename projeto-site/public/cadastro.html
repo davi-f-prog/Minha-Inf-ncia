@@ -13,26 +13,33 @@
 <body>
     <div class="box-cadastro">
         <h1>Minha Infância</h1>
-        <img src="imagens/home/meu-avatar-alegre.png" alt="">
+        <img id= "msg_img" src="imagens/home/meu-avatar-alegre.png" alt="">
         <h2>Cadastre-se</h2>
 
     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
         Nome: 
         <br>
-        <input type="text" name="nome" required minlength="4">
+        <input id="id_nome" onkeyup="avaliar_nome()" type="text" name="nome" required minlength="4">
+        <br>
+        <span id="msg_nome"></span>
         <br>
         
         Usuário: 
         <br>
-        <input type="text" name="login" required minlength="4">
+        <input id="id_usuario" onkeyup="avaliar_usuario()" type="text" name="login" required minlength="4">
+        <br>
+        <span id="msg_usuario"></span>
         <br>
         
         Senha: 
         <br>
-        <input  type="password" name="senha" required minlength="4">
+        <input id="id_senha"  type="password" onkeyup="avaliar_senha()" name="senha" required minlength="8">
         <br>
+        <span id="msg_senha"></span>
+        <br> <br>
         
         <button class="btn-cadastrar" id="btn_entrar">Cadastrar</button>
+        <br>  <br> <br> 
     </form>
     
     <img  src="imagens/home/carregando.gif" id="img_aguarde" class="img-aguarde">
@@ -40,14 +47,57 @@
     <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
         Erro no cadastro
     </div>
-
 </div>
 
 </body>
 
 </html>
 <script>
+    function avaliar_nome(){
+        var valor_nome = id_nome.value;
+      
+        valor_nome = valor_nome.trimStart().trimEnd();
+      
 
+        if(valor_nome.length >= 4 && valor_nome.length < 100) {
+                msg_nome.innerHTML = `<span style="color: green;">Nome esta Ok</span>`;
+                msg_img.src = 'imagens/home/meu-avatar-luta3.png' ;
+            }
+            else{
+                msg_nome.innerHTML = `<span style="color: red;">Nome incorreto, nome precisa ter no minimo 4 caractere</span>`;
+                msg_img.src = 'imagens/home/meu-avatar-tedio.png' ; 
+            }
+        }
+
+     function avaliar_usuario(){   
+        var valor_usuario = id_usuario.value 
+        valor_usuario = valor_usuario.trimStart().trimEnd();
+        if(valor_usuario.length >= 4 && valor_usuario.length <15 && valor_usuario.indexOf('@')>-1 || valor_usuario.indexOf('.')>-1 || valor_usuario.indexOf('$')>-1 || valor_usuario.indexOf('%')>-1 || valor_usuario.indexOf('#')>-1 || valor_usuario.indexOf('_')>-1 || valor_usuario.indexOf('&')>-1){
+            msg_usuario.innerHTML = `<span style = "color: green;"> Usuario esta Ok</span>`;
+            msg_img.src = 'imagens/home/meu-avatar-luta2.png' ;
+        }
+        else{
+            msg_usuario.innerHTML = `<span style = "color: red;"> Usuario incorreto, verifique se possui 
+                no minimo 4 caractere e se possui pelo menos um caractere especial($%@.&)</span>`;
+                msg_img.src = 'imagens/home/meu-avatar-bravo.png' ; 
+
+        }
+    
+    }
+
+    function avaliar_senha(){
+        var valor_senha = id_senha.value 
+        valor_senha = valor_senha.trimStart().trimEnd();
+        if(valor_senha.length >= 8 && valor_senha.length <= 25 && valor_senha.indexOf('@')>-1 || valor_senha.indexOf('.')>-1 || valor_senha.indexOf('$')>-1 || valor_senha.indexOf('%')>-1 || valor_senha.indexOf('#')>-1 || valor_senha.indexOf('_')>-1 || valor_senha.indexOf('&')>-1){
+            msg_senha.innerHTML = `<span style="color: green;"> Senha Ok</span>`;
+            msg_img.src = 'imagens/home/meu-avatar-sailor4.png' ;
+        }
+        else{
+            msg_senha.innerHTML = `<span style="color: red;"> Senha invalida, 
+                verifique se possui no minimo 8 caractere, e se possui um caractere especial(@#$%&)</span><br>`;
+            msg_img.src = 'imagens/home/meu-avatar-chorando.png' ;   
+        }
+    }
     function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
@@ -62,7 +112,7 @@
 
             } else {
 
-                console.log('Erro de cadastro!');
+                alert('Erro de cadastro!' );
                 response.text().then(function (resposta) {
                     div_erro.innerHTML = resposta;
                 });

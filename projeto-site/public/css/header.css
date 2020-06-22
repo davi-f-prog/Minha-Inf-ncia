@@ -75,6 +75,7 @@ html body{
 }
 .navegacao ul li:hover > ul{
      display: block;
+   
 }
 
 .btn_login{

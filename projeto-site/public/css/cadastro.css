@@ -18,11 +18,11 @@ body{
   }  
 .box-cadastro{
     width: 30%;
-    height: 450px;
+    height: 80%;
     background-color: black;
     text-align: center;
     margin-left: 36%;
-    margin-top: 10%;
+    margin-top: 6%;
     border-radius: 20px;
     border: 7px #3c7ccc solid;
     color: white;
@@ -47,10 +47,16 @@ h2{
   color: white;
   border-radius: 20px;
   cursor: pointer;
+  animation-name: ba;
+  animation-duration: 6s;
+  width: 20%;
+  height: 30px;
 
 }
 .btn-cadastrar:hover{
     background-color: yellow;
+    
+
 }
 .img-aguarde{
     width: 18%;
@@ -61,3 +67,4 @@ h2{
 input{
     border: none;
 }
+
