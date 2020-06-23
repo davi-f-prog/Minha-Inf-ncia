@@ -101,9 +101,14 @@ html body{
 .msg_welcome{
     color: white;
      font-size: 20px;
-     margin-left: 26px;
+     margin-left: 4px !important;
+     width: 290px !important;
+     height: 30px !important;
      border: none !important;
-     width: 200px;
+     text-align: justify !important;
+   
+     
+   
    
 }
 #b_usuario{

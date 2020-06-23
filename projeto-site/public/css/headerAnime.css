@@ -107,11 +107,13 @@ html body{
     color: white;
      font-size: 20px;
      margin-left: 26px;
-     border: none !important; 
+     width: 290px !important;
+     height: 30px !important;
+     border: none !important;
+  
+     text-align: justify !important;
 }
-#b_usuario{
-    width: 20%;
-}
+
 .btn_sair{
     text-decoration: none;
     color: orange;
